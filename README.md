@@ -5,7 +5,7 @@
 ## Acceso al proyecto
 
 Puedes acceder al proyecto haciendo clic en el siguiente enlace:
-[Ver proyecto de Fotos de Perritos]([https://danielmcolina.github.io/DePerros])
+[Ver proyecto de Fotos de Perritos](https://danielmcolina.github.io/DePerros)
 
 ## Funcionalidades principales
 
