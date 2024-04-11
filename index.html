@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DePerros</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/67330d2a84.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">DePerros</a>
+            <nav>
+                <ul class="header__nav">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Inicio</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Productos</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="products">
+            <h2 class="products__title">Fotos Aleatorias De Perros</h2>
+            <span id="error"></span>
+            <ul class="products__list">
+                <li class="product">
+                    <img  alt="Producto 1" class="product__image" id="img1">
+                    <button class="product__button product__button--favorites" id="btn1"><i class="fa-regular fa-heart"></i></button>
+                </li>
+                <li class="product">
+                    <img  alt="Producto 2" class="product__image" id="img2">
+                    <button class="product__button product__button--favorites" id="btn2"><i class="fa-regular fa-heart" alt="agragar a favoritos"></i></button>
+                </li>
+                <button onclick="loadRamdomDogs()" class="product__button" >Reload</button>
+                <!-- Otros productos -->
+            </ul>
+        </section>
+
+        <section id="uploadingDogs">
+            <h2>Sube la foto de tu perrito</h2>
+            <form id="uploadingForm">
+                <img id="uploadDogPhotoPreveiw" class="inactive">
+                <input id="file" type="file" name="file" onchange="showPreviewUploadPhoto()">
+                <button class="product__button" type="button" onclick="uploadDogPhoto()">Subir</button>
+            </form>
+        </section>
+
+        <section class="favorites">
+            <h2 class="favorites__title">Perros Favoritos</h2>
+            <ul class="favorites__list" id="favoritesList">
+                <!-- Lista de productos favoritos -->
+                <!-- <li class="product">
+                    <img alt="Producto 4" class="product__image" id="img4">
+                    <button class="product__button">eliminar de favoritos <i class="fa-regular fa-heart"></i></button>
+                </li> -->
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__copyright">DePerros</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
